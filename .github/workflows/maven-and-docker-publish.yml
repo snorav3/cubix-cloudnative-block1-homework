@@ -59,6 +59,6 @@ jobs:
     - name: Log in to Docker
       run: docker login ghcr.io -u snorav3 -p ${{ github.token }}
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ghcr.io/snorav3/cubix/cloudnative/demo:actions
+      run: docker build . --file Dockerfile --tag ghcr.io/snorav3/cubix/1/homework/app:springboot
     - name: Publish the Docker image
-      run: docker push ghcr.io/snorav3/cubix/cloudnative/demo:actions
+      run: docker push ghcr.io/snorav3/cubix/1/homework/app:springboot
