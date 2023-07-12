@@ -60,6 +60,6 @@ jobs:
       packages: write
     steps:
     - name: Verify Docker image
-      run: ./verify-image.sh
+      run: ./.github/workflows/verify-image.sh
       shell: bash
     
